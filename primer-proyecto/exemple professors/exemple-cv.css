@@ -39,7 +39,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10000px; /* es força una alçada */
+    height: 300px; /* es força una alçada */
     background-image: url('https://picsum.photos/id/1021/1200/300'); /* es posa una imatge de fons a partir d'un recurs local o extern. Si és un recurs local: url('assets/lamevaimatge.jpg') */
     background-size: cover; /* forçar que la imatge de fons cobreixi tot l'espai del seu contenidor */
   }
