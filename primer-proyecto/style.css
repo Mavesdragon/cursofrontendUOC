@@ -1,0 +1,8 @@
+html {
+    scroll-behavior: smooth; /* fa que els salts entre enllaços siguis suaus */
+  }
+  body {
+    margin: 0; /* elimina espai blanc entre contingut i les vores del viewport (pantalla) */
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
