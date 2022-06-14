@@ -1,0 +1,20 @@
+html {
+  scroll-behavior: smooth; /* fa que els salts entre enllaços siguis suaus */
+}
+body {
+  margin: ; /* elimina espai blanc entre contingut i les vores del viewport (pantalla) */
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.499);
+}
+.header {
+  display: flex; /* permet posicionar el contingut dels elements fills */
+  justify-content: center; /* provar amb altres alternatives: center, space-evenly, flex-start, flex-end i veure què passa */
+  align-items: center;
+  background: rgb(68, 68, 68); /* color de fons */
+  padding: 0.5rem;
+  color:rgb(255, 255, 255)
+  
+
+}
