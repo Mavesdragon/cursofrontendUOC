@@ -1,20 +1,90 @@
-çhtml {
+html {
   scroll-behavior: smooth; /* fa que els salts entre enllaços siguis suaus */
 }
 body {
-  margin: ; /* elimina espai blanc entre contingut i les vores del viewport (pantalla) */
+  margin:0 ; /* elimina espai blanc entre contingut i les vores del viewport (pantalla) */
   font-size: 1rem;
   font-family: 'Times New Roman', Times, serif;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.499);
+ 
+  background-color: rgba(204, 204, 204, 0.499);
 }
-.header {
-  display: flex; /* permet posicionar el contingut dels elements fills */
-  justify-content: center; /* provar amb altres alternatives: center, space-evenly, flex-start, flex-end i veure què passa */
-  align-items: center;
-  background: rgb(68, 68, 68); /* color de fons */
-  padding: 0.5rem;
-  color:rgb(255, 255, 255)
+header {
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 0.7rem 2rem;
+  background-image: url(/Assets/foto\ grafica.jpg);
+  background-size: cover;
   
 
 }
+
+h1{
+  display: flex;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 0.7px black;
+
+  
+}
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+.index_principal {
+display: grid;
+gap: 0.5rem;
+color: aliceblue;
+justify-content:end;
+background-color: rgb(71, 69, 69);
+padding: 1rem;
+border-radius: 15px;
+}
+
+.index_secundari {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0.5rem 3rem;
+background-color: rgb(117, 117, 117);
+
+
+
+}
+.index_secundari > a {
+  background-color: black;
+  outline-style: auto;
+  padding: 0.5rem;
+}
+footer {
+  box-sizing: border-box;
+
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 48px;
+  
+  position: absolute;
+  width: 1440px;
+  height: 128px;
+  left: 0px;
+  top: 2757px;
+  
+  background: #222222;
+  border: 1px solid #982C2C;
+  
+}
+
+  
+
+
+.Qr{
+  max-width: 12rem;
+  max-height: 12rem;
+
+}
+
