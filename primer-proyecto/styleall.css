@@ -12,7 +12,7 @@ header {
   display: flex;
   justify-content:space-between;
   align-items:center;
-  padding: 0.7rem 2rem;
+  padding: 3% 3%;
   background-image: url(/Assets/foto\ grafica.jpg);
   background-size: cover;
   
@@ -43,48 +43,93 @@ border-radius: 15px;
 
 .index_secundari {
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
 padding: 0.5rem 3rem;
 background-color: rgb(117, 117, 117);
 
+}
+
+h2 {
+  font-family: Arial;
+  -webkit-text-stroke: 0.3px black;
+  text-align: center;
+}
 
 
-}
-.index_secundari > a {
-  background-color: black;
-  outline-style: auto;
-  padding: 0.5rem;
-}
-footer {
-  box-sizing: border-box;
+/* exclusiva de la pagina index.html*/
+.qui_soc_jo {
+
+  padding-top: 15%;
 
 }
-.social {
+
+.quisocjo_mes_imatge {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  gap: 48px;
-  
-  position: absolute;
-  width: 1440px;
-  height: 128px;
-  left: 0px;
-  top: 2757px;
-  
-  background: #222222;
-  border: 1px solid #982C2C;
+  justify-content: space-around;
+  padding: 5%;
+}
+.jo_camisa {
+  max-height: 25rem;
+  padding-left: 2rem;
+}
+
+
+
+.hobbies {
+  padding: 15%;
+}
+
+.hobbies_mes_imatge {
+  display:flex;
+  justify-content: space-around;
+  padding: 5%;
   
 }
 
-  
+.hobbies_photo {
+  max-height:25rem;
+  max-width: 25rem;
+  padding-right: 7%;
+}
+
+.dades_personals {
+  display: flex;
+  padding: 1rem 5rem;
+  justify-content: space-around;
+  flex: auto;
+
+}
+.adreça{
+  padding: 2rem;
+}
+.telefon {
+  padding: 2rem;
+}
 
 
 .Qr{
-  max-width: 12rem;
-  max-height: 12rem;
+  max-width: 17rem;
+  max-height: 17rem;
+  padding-left: 5rem;
 
 }
+/*Aqui s'acaba la pagina d'index*/
+
+.img_social {
+max-height: 2rem;
+}
+.social {
+  width: 100%;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+ border: 1px solid #0e0c14;
+}
+
+
+  
+
+
+
 
