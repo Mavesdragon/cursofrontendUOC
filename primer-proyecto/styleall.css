@@ -116,8 +116,57 @@ h2 {
 }
 /*Aqui s'acaba la pagina d'index*/
 
+/*Aquí comença la pàgina del CV*/
+.idiomes {
+  padding:15%;
+}
+.estudis {
+  padding:15%;
+}
+.informatica {
+  padding:15%;
+
+}
+.contingut_informatica {
+ 
+}
+
+.nivell_programacio {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 5%;
+}
+
+
+.cursos_informatica {
+  padding-top: 5%;
+  align-content: center;
+  
+}
+.laboral {
+  
+  padding:10%;
+}
+
+.laboral_contingut {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10%;
+}
+.img_mendel {
+  max-width: max-content;
+  max-height: max-content;
+  padding-left: 2%;
+}
+
+
+/*Aquí s'acaba la pàgina del CV */
+
 .img_social {
 max-height: 2rem;
+
 }
 .social {
   width: 100%;
