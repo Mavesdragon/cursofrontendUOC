@@ -54,6 +54,8 @@ padding: 1rem;
 border-radius: 15px;
 }
 
+.index_principal > a:hover {background-color: rgb(189, 94, 0);}
+
 .index_secundari {
 display: flex;
 justify-content: space-around;
@@ -62,6 +64,7 @@ padding: 0.5rem 3rem;
 background-color: rgb(117, 117, 117);
 
 }
+.index_secundari > a:hover {color: yellowgreen;}
 
 h2 {
   font-family: Arial;
@@ -165,6 +168,62 @@ td:hover {background-color: coral;}
 .estudis {
   padding:15%;
 }
+
+.empresarials_mes_postgrau {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5rem;
+
+}
+/*
+.card {
+display:flex;
+flex-direction: column;
+
+justify-items: center;
+padding: 2%;
+border: 5px solid purple;
+border-radius:6px;
+
+
+}
+.card > img {
+  justify-content: center;
+  padding: 5%;
+  border: 1px solid black;
+}
+*/
+
+.card {
+  display: inline-grid;
+  padding: 2%;
+
+  border: 2px solid purple;
+  border-radius: 6px;
+
+
+}
+
+.card > img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+@media only screen and (max-width: 600px) {
+
+.empresarials_mes_postgrau {
+  display: flex;
+  flex-direction: column;
+}
+
+  }
+
+  
+
+
+
 .informatica {
   padding:15%;
 
