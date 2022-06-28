@@ -130,9 +130,38 @@ h2 {
 /*Aqui s'acaba la pagina d'index*/
 
 /*Aquí comença la pàgina del CV*/
+
 .idiomes {
   padding:15%;
 }
+
+table {
+  margin: auto;
+  width: 100%;
+  
+  
+}
+
+table, th,td {
+  
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+  color: azure;
+  background-color: rgb(124, 124, 124) ;
+}
+
+th,td {
+  
+  margin: 5%;
+  ;
+  
+}
+
+td:hover {background-color: coral;}
+
+
 .estudis {
   padding:15%;
 }
