@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body id="main-body" class="">
+    <header class="">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex align-self-center justify-content-center">
+                    <h1 class="text-center">POKÉDEX</h1>
+                    <!-- <button id="btn_theme" class="btn btn-theme">Hola</button> -->
+                    <div class="controls align-self-center">
+                        <div>
+                            <label for="dark_theme">Dark</label>
+                            <input type="radio" name="theme" id="dark_theme" value="dark" />
+                        </div>
+
+                        <div>
+                            <label for="light_theme">Light</label>
+                            <input type="radio" name="theme" id="light_theme" value="light" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-menu">
+            <div class="container">
+                <nav class="navbar-menu">
+                    <ul>
+                        <li class="active">
+                            <a href="index.html" class="btn active">Home</a>
+                        </li>
+                        <li>
+                            <a href="combat.html" class="btn">Combat</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="pokemon-list" class="container mb70">
+         <div class="content-searcher">
+            <div class="searcher">
+                <input type="text" value="" name="pokemonID" id="search-pokemon" placeholder="Introdueix un Pokémon..." class="input_search" />
+                <button id="btn-search-pokemon" class="fa fa-search btn button_search no_link">Buscar</button>
+            </div>
+        </div>
+
+        <div class="list-original mt10" style="display: none;">
+            <button id="btn-back-original-list" class="btn btn-back-list">Torna al inici</button>
+        </div>
+
+        <div class="content-spinner" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+
+        <div class="detail-card-pokemon"></div>
+
+        <div class="list-card-pokemon"></div>
+    </section>
+
+    <!-- TEMPLATE CARD INDIVIDUAL -->
+    <template id="template-card-pkm-solo">
+        <article class="card" data-pokeid="">
+            <h2 class="title card-title text-center"></h2>
+            
+            <!-- Content Imgs -->
+            <div class="imgs-pokemon">
+            
+                <!-- Img Default pokemon -->
+                <div class="default-pokemon">
+                    <div class="content-img-card">
+                        <!-- Front img -->
+                        <div class="front">
+                            <img src="" class="img-card-pokemon" />
+                        </div>
+                    </div>
+                    
+                    <div class="content-img-card">
+                        <!-- Back img -->
+                        <div class="back">
+                            <img src="" class="img-card-pokemon" />
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Img Shiny pokemon -->
+                <div class="shiny-pokemon">
+                    <div class="content-img-card">
+                        <!-- Front img -->
+                        <div class="front">
+                            <img src="" class="img-card-pokemon" />
+                        </div>
+                    </div>
+                    
+                    <div class="content-img-card">
+                        <!-- Back img -->
+                        <div class="back">
+                            <img src="" class="img-card-pokemon" />
+                        </div>
+                    </div>    
+                </div>
+    
+            </div>
+            
+            <!-- Content text -->
+            <div class="content-text-card mt10">
+                <ul>
+                    <li><span class="align-self-center">Tipus</span> <span class="content-types-pokemon"></span></li>
+                    <li><span>Atac</span> <span class="stat-attack"></span></li>
+                    <li><span>Defensa</span> <span class="stat-defense"></span></li>
+                </ul>
+            </div>
+           
+        </article>
+    </template>
+
+    <!-- TEMPLATE CARD -->
+    <template id="template-card-pkm">
+        <article class="card" data-pokeid="">
+            <h2 class="title card-title text-center"></h2>
+            
+            <!-- Img -->
+            <div class="content-img-card">
+                <!-- Front img -->
+                <div class="front pointer" onclick="changeCardImg(this); return false;">
+                    <img src="" class="img-card-pokemon" />
+                </div>
+                
+                <!-- Back img -->
+                <div class="back pointer" onclick="changeCardImg(this); return false;" style="display: none;">
+                    <img src="" class="img-card-pokemon" />
+                </div>
+            </div>
+            
+            <!-- Content text -->
+            <div class="content-text-card mt10">
+                <ul>
+                    <li><span class="align-self-center">Tipus</span> <span class="content-types-pokemon"></span></li>
+                    <li><span>Atac</span> <span class="stat-attack"></span></li>
+                    <li><span>Defensa</span> <span class="stat-defense"></span></li>
+                </ul>
+            </div>
+            
+            <!-- More info onclick="changeURL(document.querySelector('.card').dataset.pokeid); return false;"-->
+            <div class="content-more-info text-center">
+                <button class="btn btn-more-info">Més informació</button>
+            </div>
+        </article>
+    </template>
+    
+    <footer class="main-footer">
+        <section class="container">
+            <div class="text-center">
+                <span>Copyright 2022 - Albert Juan Cortina "Juandale8"</span>
+            </div>
+        </section>
+    </footer>
+    
+    <script type="text/javascript">
+        var pokeParam = "";
+
+        function checkURLParams () {
+            // Params de l'URL
+            var queryString = window.location.search;
+            var urlParams = new URLSearchParams(queryString);
+            pokeParam = urlParams.get('pokeID');
+            
+            return pokeParam;
+        }
+
+        checkURLParams();
+        
+    </script>
+
+    <script defer type='module' src="assets/js/main.js"></script>
+    <script defer src="assets/js/theme.js"></script>
+</body>
+</html>
